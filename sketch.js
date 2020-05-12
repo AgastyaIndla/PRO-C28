@@ -16,7 +16,7 @@ function setup() {
 
   ground = new Ground();
   stand1 = new Stand(490,300,240,10);
-  stand2 = new Stand(750,190,160,10);
+  stand2 = new Stand(750,190,180,10);
 
  //STAND 1
  //Row 1
@@ -46,14 +46,26 @@ function setup() {
 
  //STAND 2
 //Row 1
-block18 = new Block(705,170,30,30);
-block19 = new Block(705,140,30,30); 
+block18 = new Block(690,170,30,30);
+block19 = new Block(720,170,30,30); 
 block20 = new Block(750,170,30,30); 
-block21 = new Block(795,170,30,30); 
-block22 = new Block(795,140,30,30);
-block23 = new Block(735,140,30,30);  
-block24 = new Block(765,140,30,30); 
-block25 = new Block(750,95,60,60); 
+block21 = new Block(780,170,30,30); 
+block22 = new Block(810,170,30,30);
+
+//Row 2
+block23 = new Block(705,140,30,30);  
+block24 = new Block(735,140,30,30); 
+block25 = new Block(765,140,30,30); 
+block26 = new Block(795,140,30,30); 
+
+//Row 3
+block27 = new Block(720,110,30,30);
+block28 = new Block(750,110,30,30); 
+block29 = new Block(780,110,30,30);
+
+//Row 4
+block30 = new Block(750,80,30,30);
+
 
 }
 
@@ -93,6 +105,11 @@ function draw() {
     block23.display();
     block24.display();
     block25.display();
+    block26.display();
+    block27.display();
+    block28.display();
+    block29.display();
+    block30.display();
 
   drawSprites();
 }
